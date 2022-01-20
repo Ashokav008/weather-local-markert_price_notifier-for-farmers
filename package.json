@@ -1,0 +1,31 @@
+{
+    "name": "sender",
+    "version": "1.0.0",
+    "description": "Quickstart for sms",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@vonage/server-sdk": "^2.10.10",
+        "body-parser": "^1.19.1",
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "messagemedia-messages-sdk": "^2.0.3",
+        "mongoose": "^6.1.6",
+        "request": "^2.88.2",
+        "twilio": "^3.72.0"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ashokav008/weather-notifier.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Ashokav008/weather-notifier/issues"
+    },
+    "homepage": "https://github.com/Ashokav008/weather-notifier#readme"
+}
