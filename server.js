@@ -22,8 +22,8 @@ app.set('view engine', 'ejs');
 // --------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
 var client = require('twilio')(
-    "ACaaf8b7badeb626a4223214120b9aab88",
-    "255e7ef243dfb378c12807e338a276b1"
+    "ACa32355664f99157b7ece8cab7fad187f",
+    "9191bf504978a2d212afa51feec03dde"
 );
 
 // client.messages.create({
@@ -49,8 +49,8 @@ function outerWeatherTime() {
     myTime = new Date().toISOString();
     theDate = new Date(Date.parse(myTime));
     time = theDate.toLocaleTimeString()
-        // refTime = "10:00:00 pm";
-    refTime = time
+    refTime = "10:00:00 pm";
+    // refTime = time
     console.log(time, refTime)
     if (refTime == time) {
         console.log("The time is now onnn!!!")
@@ -113,7 +113,7 @@ function sendWeatherData() {
                             // --------------------------------------
                             // --------------------------------------
                             client.messages.create({
-                                from: "+16075368785",
+                                from: "+14159805375",
                                 to: mobile,
                                 body: myMessage
                             }).then((message) => console.log(message.sid));
